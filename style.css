@@ -14,15 +14,17 @@
 
 body {
   background: var(--preto);
+  padding-left: 2%;
+  padding-right: 2%;
+  width: auto;
 
 }
 
 #grade-first {
-  background-image: linear-gradient(to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 20%,
+  background-image: linear-gradient(rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 70%,
       rgba(0, 0, 0, 0) 80%,
-      rgba(0, 0, 0, 1) 100%), url(/imgs/e96c741c-d41a-45d5-897f-655460a8302d.png);
+      rgba(0, 0, 0, 1) 100%), url(/imgs/welding-work-with-metal-construction-busy-metal-factory.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,7 +40,7 @@ body {
   flex-direction: column;
   gap: 0;
   padding-top: 15%;
-  padding-left: 3%;
+ /* padding-left: 3%;*/
 }
 
 #grade-first-textos p {
@@ -49,26 +51,53 @@ body {
 }
 
 #grade-first-textos h1 {
-  font-size: 100px;
+  font-size: 120px;
   line-height: 1;
 
   margin: 0%;
 }
 
 #grade-first-textos h3 {
-  font-size: 40px;
+  font-size: 60px;
   color: var(--azulEscuro);
   margin: 0%;
   line-height: 1;
 
 
 }
+#grade-first-botao{
+  background: var(--azulEscuro);
+  width: fit-content;
+  margin-top: 35px;
+  border: 1px solid;
+  border-radius: 10px;
+  height: 35px;
+  
+}
+
+#grade-first-botao a {
+  border: none;
+  padding: 12px 12px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  color: var(--prata);
+
+
+}
+#grade-first-botao img {
+  height: 15px;
+  width: 15px;
+  padding-right: 5px;
+}
 
 #grade-second {
   border-color: var(azulEscuro);
   color: var(--prata);
-  height: 300px;
-  margin-top: 100px;
+  height: 500px;
+
 
   background: linear-gradient(to bottom,
       rgba(0, 0, 0, 1) 0%,
@@ -84,12 +113,11 @@ body {
 }
 
 #navegacao {
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
   width: 100%;
-
 
 }
 
@@ -98,7 +126,7 @@ body {
   list-style: none;
   margin: 10px;
   display: flex;
-
+  gap: 15px;
 }
 
 #navegacao a {
@@ -106,7 +134,7 @@ body {
   color: var(--prata);
   padding: 15px 20px;
   text-decoration: none;
-  margin-right: 50px;
+
 }
 
 #navegacao p {
@@ -136,7 +164,9 @@ body {
 
 }
 
-#grade-second-textos, #grade-third-textos, #grade-fourth-textos {
+#grade-second-textos,
+#grade-third-textos,
+#grade-fourth-textos {
   color: var(--prata);
   display: flex;
   justify-content: center;
@@ -144,14 +174,20 @@ body {
   height: fit-content;
   align-items: center;
   gap: 0px;
-  height: 140px;
-}
-#grade-second, #grade-third, #grade-fourth {
 
-height: fit-content + 100px;
 }
 
-#grade-second-textos h1, #grade-third-textos h1, #grade-fourth-textos h1 {
+#grade-second,
+#grade-third,
+#grade-fourth {
+
+  height: fit-content + 300px;
+  margin-top: 100px;
+}
+
+#grade-second-textos h1,
+#grade-third-textos h1,
+#grade-fourth-textos h1 {
   font-size: 50px;
   font-family: 'Bebas Neue', sans-serif;
   line-height: 1;
@@ -159,11 +195,14 @@ height: fit-content + 100px;
 
 }
 
-#grade-second-textos p, #grade-third-textos p, #grade-fourth-textos p {
-  margin: 0%;
-  line-height: 1.2;
+#grade-second-textos p,
+#grade-third-textos p,
+#grade-fourth-textos p {
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 1.1;
   font-family: 'Montserrat', sans-serif;
-
+  text-align: center;
 
 }
 
@@ -193,6 +232,67 @@ height: fit-content + 100px;
 
 .carrossel-item {
 
-  border: 3px solid;
-  border-radius: 10px;
+ 
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#grade-fourth {
+
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--prata);
+
+}
+
+#grade-fourth-items {}
+
+#grade-fourth-textos {}
+
+#contatos {
+
+  color: var(--prata);
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+
+
+}
+
+.contatos-links {
+
+  height: 45px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.contatos-links a {
+  color: var(--azulEscuro);
+  border: none;
+  padding: 12px 12px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+
+}
+
+.contatos-links img {
+  height: 25px;
+  width: 25px;
+  padding-right: 5px;
+}
+
+iframe{
+
+  
+   box-shadow: 0 0 10px 1px var(--cinzaEscuro);
+  border-radius: 30px;
+
 }
